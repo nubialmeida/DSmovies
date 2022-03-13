@@ -5,8 +5,8 @@
     --text-gray: #4a4a4a;
     --bg-gray: #e8e8e8;
     --white: #fff;
-    --text-light-gray:#aaa;
-    --star-yellow: #FFBB3A
+    --text-light-gray: #aaa;
+    --star-yellow: #ffbb3a;
 }
 
 * {
@@ -69,7 +69,7 @@ a:hover {
 }
 
 #dsmovie-card-list {
-    padding: 40px 10px;
+    padding: 0 10px;
 }
 
 .dsmovie-card {
@@ -107,7 +107,7 @@ a:hover {
 
 .dsmovie-card-description-bottom h4 {
     font-size: 16px;
-    font-weight:700;
+    font-weight: 700;
     color: var(--star-yellow);
 }
 
@@ -122,7 +122,8 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.dsmovie-btn, .dsmovie-btn:hover {
+.dsmovie-btn,
+.dsmovie-btn:hover {
     width: 180px;
     height: 40px;
     background-color: var(--color-primary);
@@ -147,7 +148,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius:  0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
 }
 
 .dsmovie-form {
@@ -155,9 +156,9 @@ a:hover {
 }
 
 .dsmovie-form-description h3 {
-font: size 13px;
-font-weight: 700;
-margin-bottom: 20px;
+    font: size 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .dsmovie-form-group {
@@ -170,9 +171,56 @@ margin-bottom: 20px;
 }
 
 .dsmovie-form-btn-container {
-height: 100px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dsmovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dsmovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(67%) saturate(3061%) hue-rotate(238deg)
+        brightness(93%) contrast(81%);
+}
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+}
+
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
+
+.dsmovie-flip-horizontal {
+    transform: rotate(180deg);
 }
